@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.MonthCombobox = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.GenderBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,21 +116,35 @@
             this.MonthCombobox.Name = "MonthCombobox";
             this.MonthCombobox.Size = new System.Drawing.Size(145, 21);
             this.MonthCombobox.TabIndex = 7;
+            this.MonthCombobox.Items.Add("January");
+            this.MonthCombobox.Items.Add("February");
+            this.MonthCombobox.Items.Add("March");
+            this.MonthCombobox.Items.Add("April");
+            this.MonthCombobox.Items.Add("May");
+            this.MonthCombobox.Items.Add("June");
+            this.MonthCombobox.Items.Add("Jule");
+            this.MonthCombobox.Items.Add("August");
+            this.MonthCombobox.Items.Add("September");
+            this.MonthCombobox.Items.Add("October");
+            this.MonthCombobox.Items.Add("November");
+            this.MonthCombobox.Items.Add("December");
             // 
-            // comboBox1
+            // GenderBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 150);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 21);
-            this.comboBox1.TabIndex = 8;
+            this.GenderBox.FormattingEnabled = true;
+            this.GenderBox.Location = new System.Drawing.Point(101, 150);
+            this.GenderBox.Name = "GenderBox";
+            this.GenderBox.Size = new System.Drawing.Size(145, 21);
+            this.GenderBox.TabIndex = 8;
+            this.GenderBox.Items.Add("Male");
+            this.GenderBox.Items.Add("Female");
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 446);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.GenderBox);
             this.Controls.Add(this.MonthCombobox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -157,7 +171,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox MonthCombobox;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox GenderBox;
     }
 }
 
