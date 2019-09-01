@@ -12,12 +12,17 @@ namespace Population
 {
     public partial class Form1 : Form
     {
+        public Document document;
         public Form1()
         {
             InitializeComponent();
-            
+            FileDialog.ShowDialog();
+            var path = FileDialog.FileName;
+            document = new Document(path);
+
+
         }
 
-        
+
     }
 }
