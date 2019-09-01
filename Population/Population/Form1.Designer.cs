@@ -60,6 +60,7 @@
             this.DrawBtn.TabIndex = 1;
             this.DrawBtn.Text = "Draw graph";
             this.DrawBtn.UseVisualStyleBackColor = true;
+            this.DrawBtn.Click += new System.EventHandler(this.DrawBtn_Click);
             // 
             // LoadBtn
             // 
