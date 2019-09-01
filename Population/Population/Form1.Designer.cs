@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.MonthCombobox = new System.Windows.Forms.ComboBox();
             this.GenderBox = new System.Windows.Forms.ComboBox();
+            this.FileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,32 +113,38 @@
             // MonthCombobox
             // 
             this.MonthCombobox.FormattingEnabled = true;
+            this.MonthCombobox.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "Jule",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
             this.MonthCombobox.Location = new System.Drawing.Point(101, 104);
             this.MonthCombobox.Name = "MonthCombobox";
             this.MonthCombobox.Size = new System.Drawing.Size(145, 21);
             this.MonthCombobox.TabIndex = 7;
-            this.MonthCombobox.Items.Add("January");
-            this.MonthCombobox.Items.Add("February");
-            this.MonthCombobox.Items.Add("March");
-            this.MonthCombobox.Items.Add("April");
-            this.MonthCombobox.Items.Add("May");
-            this.MonthCombobox.Items.Add("June");
-            this.MonthCombobox.Items.Add("Jule");
-            this.MonthCombobox.Items.Add("August");
-            this.MonthCombobox.Items.Add("September");
-            this.MonthCombobox.Items.Add("October");
-            this.MonthCombobox.Items.Add("November");
-            this.MonthCombobox.Items.Add("December");
             // 
             // GenderBox
             // 
             this.GenderBox.FormattingEnabled = true;
+            this.GenderBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.GenderBox.Location = new System.Drawing.Point(101, 150);
             this.GenderBox.Name = "GenderBox";
             this.GenderBox.Size = new System.Drawing.Size(145, 21);
             this.GenderBox.TabIndex = 8;
-            this.GenderBox.Items.Add("Male");
-            this.GenderBox.Items.Add("Female");
+            // 
+            // FileDialog
+            // 
+            this.FileDialog.FileName = "FileDialog";
             // 
             // Form1
             // 
@@ -172,6 +179,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox MonthCombobox;
         private System.Windows.Forms.ComboBox GenderBox;
+        private System.Windows.Forms.OpenFileDialog FileDialog;
     }
 }
 
