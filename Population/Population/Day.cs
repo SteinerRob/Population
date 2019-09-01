@@ -22,8 +22,8 @@ namespace Population
         private DateTime SetDateFromString(string date)
         {
             DateTime dateTime;
-            var temp = date.Split(' ');
-            dateTime = new DateTime(2016, Month(temp[1]), int.Parse(temp[0]));
+            var temp = date.Split('.');
+            dateTime = new DateTime(2016, Month(temp[1].TrimStart()), int.Parse(temp[0]));
             return dateTime;
         }
         private int GenderToInt(string gender)

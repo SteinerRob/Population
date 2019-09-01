@@ -132,6 +132,7 @@
             this.MonthCombobox.Name = "MonthCombobox";
             this.MonthCombobox.Size = new System.Drawing.Size(145, 21);
             this.MonthCombobox.TabIndex = 7;
+            this.MonthCombobox.SelectedIndexChanged += new System.EventHandler(this.MonthCombobox_SelectedIndexChanged);
             // 
             // GenderBox
             // 
@@ -143,6 +144,7 @@
             this.GenderBox.Name = "GenderBox";
             this.GenderBox.Size = new System.Drawing.Size(145, 21);
             this.GenderBox.TabIndex = 8;
+            this.GenderBox.SelectedIndexChanged += new System.EventHandler(this.GenderBox_SelectedIndexChanged);
             // 
             // FileDialog
             // 
