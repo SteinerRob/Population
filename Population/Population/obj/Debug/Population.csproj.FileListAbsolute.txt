@@ -1,0 +1,10 @@
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.csprojAssemblyReference.cache
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.Form1.resources
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.Properties.Resources.resources
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.csproj.GenerateResource.cache
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.csproj.CoreCompileInputs.cache
+C:\Users\Technik\Desktop\Population\Population\Population\Population\bin\Debug\Population.exe.config
+C:\Users\Technik\Desktop\Population\Population\Population\Population\bin\Debug\Population.exe
+C:\Users\Technik\Desktop\Population\Population\Population\Population\bin\Debug\Population.pdb
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.exe
+C:\Users\Technik\Desktop\Population\Population\Population\Population\obj\Debug\Population.pdb
