@@ -16,11 +16,15 @@ namespace Population
         public Form1()
         {
             InitializeComponent();
-            
+        }
+
+        private void LoadBtn_Click(object sender, EventArgs e)
+        {
+            FileDialog.ShowDialog();
+            var path = FileDialog.FileName;
+            document = new Document(path,label2);
 
 
         }
-
-
     }
 }

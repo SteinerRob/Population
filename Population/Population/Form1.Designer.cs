@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.DrawBtn = new System.Windows.Forms.Button();
             this.LoadBtn = new System.Windows.Forms.Button();
@@ -44,8 +44,8 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Location = new System.Drawing.Point(279, 102);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(654, 300);
@@ -69,6 +69,7 @@
             this.LoadBtn.TabIndex = 2;
             this.LoadBtn.Text = "Load XML file";
             this.LoadBtn.UseVisualStyleBackColor = true;
+            this.LoadBtn.Click += new System.EventHandler(this.LoadBtn_Click);
             // 
             // label1
             // 

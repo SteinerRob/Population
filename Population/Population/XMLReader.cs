@@ -9,6 +9,11 @@ namespace Population
 {
     public class XMLReader
     {
+        static public string GetNameFromPath(string path)
+        {
+            var fileName = path.Split('\\');
+            return fileName[fileName.Length - 1];
+        }
         static public List<Day> SetDays(string path)
         {
             List<Day> dayList = new List<Day>();
