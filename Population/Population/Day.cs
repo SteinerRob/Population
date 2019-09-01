@@ -10,13 +10,13 @@ namespace Population
     {
         public int Value { get; private set; }
         public DateTime Date { get; private set; }
-        public string Gender { get; private set; }
+        public int Gender { get; private set; }
 
         public Day(int value, string date, string gender)
         {
             Value = value;
             Date = SetDateFromString(date);
-            Gender = gender;
+            Gender = GenderToInt(gender);
         }
 
         private DateTime SetDateFromString(string date)
@@ -25,6 +25,14 @@ namespace Population
             var temp = date.Split(' ');
             dateTime = new DateTime(2016, Month(temp[1]), int.Parse(temp[0]));
             return dateTime;
+        }
+        private int GenderToInt(string gender)
+        {
+
+            if (gender == "muž")
+                return 0;
+            else
+                return 1;
         }
         private int Month(string month)
         {
