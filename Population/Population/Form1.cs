@@ -15,6 +15,7 @@ namespace Population
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         
