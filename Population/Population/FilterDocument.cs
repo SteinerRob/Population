@@ -15,6 +15,8 @@ namespace Population
 
         public FilterDocument(Document document, int searchedGender, int searchedMonth)
         {
+            SearchedGender = searchedGender;
+            SearchedMonth = searchedMonth;
             FilteredList = new List<Day>();
             GetFilteredList(document);
             
@@ -25,7 +27,7 @@ namespace Population
 
             foreach (var day in document._days)
             {
-               if (day.Gender == SearchedGender + 1 && IntMonthFromDateTime(day.Date) == SearchedMonth + 1)
+               if (day.Gender == SearchedGender && IntMonthFromDateTime(day.Date) == SearchedMonth +1)
                {
                     FilteredList.Add(day);
                }

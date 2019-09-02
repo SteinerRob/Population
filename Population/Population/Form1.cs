@@ -9,8 +9,8 @@ namespace Population
 {
     public partial class Form1 : Form
     {
-        public Document Document= null;
-        public FilterDocument Filter=null;
+        public Document Document;
+        public FilterDocument Filter ;
 
 
         public Form1()
@@ -29,17 +29,20 @@ namespace Population
 
         private void DrawBtn_Click(object sender, EventArgs e)
         {
-            if (Document != null&&Filter!=null)
+            if (Document != null && Filter != null)
             {
+
                 DrawingManager.DrawGraph(chart1, Filter, Filter.SearchedGender);
             }
-            else
+            else if (Document == null)
             {
                 MessageBox.Show("Load Xml file please");
                 FileDialog.ShowDialog();
                 var path = FileDialog.FileName;
                 Document = new Document(path, label2);
             }
+            else
+                MessageBox.Show("Please set filter(Pick Month&Gender)");
         }
 
         private void MonthCombobox_SelectedIndexChanged(object sender, EventArgs e)
