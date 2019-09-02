@@ -13,8 +13,8 @@ namespace Population
         {
             var chart = chart1.ChartAreas[0];
 
-            chart.AxisX.IntervalType = DateTimeIntervalType.Number;
-            chart.AxisX.LabelStyle.Format = "";
+            chart.AxisX.IntervalType = DateTimeIntervalType.Days;
+            chart.AxisX.LabelStyle.Format = "m";
             chart.AxisY.LabelStyle.Format = "";
             chart.AxisY.LabelStyle.IsEndLabelVisible = true;
 
